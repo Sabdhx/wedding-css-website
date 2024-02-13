@@ -28,9 +28,10 @@
 // console.log(newarray);
 
 // let array=(newarray)=>{
-//    return newarray.map(i=>i*3)
+
+// return newarray.map(i=>i*3)
 // }
-//  console.log(array([1,2,3,4,5,6,6]))
+// console.log(array([1,2,3,4,5,6,6]))
 
 // let array = [1, 2, 3, 4, 5];
 
@@ -59,6 +60,49 @@
 //              {name:"shah",age:24},
 //              {name:"rizvi",age:25} ];
 
-//           let newarray=array.map(i=>({name:i.name.split('').reverse().join(''),age:i.age*2}))
-//           console.log(newarray)
+//  array=[1,2,3,4,5,6,7]
+//  let newarray=array.map(i=>({name:i.name.split('').reverse().join(''),age:i.age*2}))
+//  console.log(newarray)
 
+// const array=[1,2,3,4,5,6,7,]
+// let newc=array.map(i=>array.join())
+// console.log(newc)
+
+// console.log([1,2,3,4,5,6].map( i =>i % 2 == 0 ))
+
+// const sentance=["here is another one going to follow us bro"]
+// const newsentence=sentance.split('').filter(i=>'aeiou'.includes(i.toLowerCase()));
+// console.log(newsentence)
+
+
+// const sentence = "here is another one going to follow us bro";
+// const vowels = sentence.split('').filter(char => 'aeiou'.includes(char.toLowerCase()));
+// console.log(vowels);
+
+// function squareAndConvertToString(arr) {
+
+//   return arr.map(num => (num * num).toString());
+// }
+// const input = [1, 2, 3, 4, 5];
+// const output = squareAndConvertToString(input);
+// console.log(output); // Output: ["1", "4", "9", "16", "25"]
+
+
+// const array=[1,2,3,4,5,6,7]
+// newarray=array.filter(i=>i>3).map(i=>i*i)
+// console.log(newarray)
+
+// array=["ay yo whats up"]
+// newarray=array.split('').filter(i=>!"aeiou".includes(char)).join(''));
+// console.log(newarray)
+
+// const array = ["ay yo whats up"];
+// let arraynew=array.map(string=>string.split('').filter(i=> !"aeiouAIOU".includes(char)).join(''));
+// console.log(arraynew);
+
+let btn = document.querySelector('.btn'); // Assuming you're selecting by class name
+function colorChanges() {
+  btn.style.color = "red";
+  btn.style.backgroundColor = "blue"; // Change background color to blue
+}
+btn.addEventListener("click", colorChanges);
